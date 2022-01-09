@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+    <title>About | anthonydaytv.com</title>
+    <link rel="shortcut icon icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+	<script src="javascript.js"></script>
+	<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+	<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+	<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+</head>
+<body bgcolor="#2B2B2B" text="white" position="absolute" data-aos-duration="1200" data-aos-easing="ease" data-aos-delay="0" style="transition-timing-function: ease; transition-duration: 1.2s;">
+<style>
+    html {
+  		scroll-behavior: smooth;
+ 	}
+    .cbtec_online-head {
+    	line-height: 1em;
+		font-size: 6em;
+		font-family: 'Barlow Condensed', sans-serif;
+		text-align: center;
+		width: 95%;
+		word-wrap:  break-word;
+    }
+
+    .cbtec_online-subhead {
+    	font-size: 3em;
+		line-height: 45px;
+		font-family: 'Barlow Condensed', sans-serif;
+		text-align: center;
+    }
+
+    #down {
+    }
+
+    .arrow-online {
+    	position: absolute; 
+    	width: 50px;
+    	margin: 0 auto;
+    	margin-top: 0%;
+    	z-index: 91;
+    }
+
+    .arrow-online:focus {
+    	-webkit-animation: arrow-flip 1s ease-in-out forwards;
+    			animation: arrow-flip 1s ease-in-out forwards;
+    }
+
+    .arrow-online:active {
+    	-webkit-animation: none;
+    			animation: none;
+    }
+
+    @keyframes arrow-flip {
+    	100% {
+    		-webkit-transform: rotate(180deg);
+    	}
+    }
+
+    [data-aos="fade"] {
+    	opacity: 0;
+    	transition-property: opacity;
+    	transition-duration: 0.5s;
+    }
+
+    [data-aos="fade"].aos-animate {
+    	opacity: 1;
+    }
+
+    .favicon-holder-home {
+    	margin: auto;
+    	width: 23%;
+    }
+
+
+	a:visited{ 
+		color: #D52424; 
+		text-decoration: none;
+	}
+
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            border: 5px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: rgba(255, 66, 66, 0.7);
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background-color: rgba(255, 139, 139, 0.6);
+            }
+
+    .cbtec_online-devicesmall {
+			display: none;
+			font-size: 150%;
+			line-height: 150%;
+			font-family: 'Barlow Condensed', sans-serif;
+			text-align: center;
+		}
+    
+    .cbtec_online-paragraph {
+    	font-size: 2.2em;
+		line-height: 1em;
+		font-family: 'Barlow Condensed', sans-serif;
+		text-align: center;
+		width: 95%;
+    }
+
+    .youtube-section {
+    	margin: 0 auto;
+    	display: block;
+    	z-index: 94;
+    }
+	
+    @media only screen and (max-width: 767px) {
+	body .pull-right{float:none!important}
+    }
+
+    body {
+            margin: 0;
+            width: 100%;
+        }
+
+    @media only screen and (max-device-width : 700px) {
+		.mobileDisable {
+			display: none;
+		}
+	} 
+
+	@media only screen and (max-device-width : 250px) {
+		.cbtec_online-head {
+			display: none;
+		}
+		.cbtec_online-subhead {
+			display: none;
+		}
+		.cbtec_online-paragraph {
+			display: none;
+		}
+		.cbtec_online-devicesmall {
+			display: block;
+		}
+		.arrow-online {
+			display: none;
+		}
+		.twitch_player2 {
+			display: none;
+		}
+	}
+
+	.cbtec_online-menu {
+		font-size: 2.2em;
+		line-height: 1em;
+		position: absolute;
+		top: -90%;
+		font-family: 'Barlow Condensed', sans-serif;	
+		width: 95%;
+	}
+
+	@media only screen and (max-width: 1084px) {
+		.chat_embed {
+			display: none;
+		}
+		.twitch_player2 {
+			width: 100%;
+		}
+	}
+
+	.underlay-youtube {
+		background-color: rgba(213, 36, 36, 0.8);
+		width: 100%;
+		height: 325px;
+		top:  61%;
+	}
+
+	.vidC {
+		top: -1.5%;  -ms-transform: translateY(1.5%); transform: translateY(1.5%);
+	}
+
+	.vidB {
+		top: -1.5%;  -ms-transform: translateY(1.5%); transform: translateY(1.5%);
+	}
+
+	@media only screen and (max-width:  1700px) {
+		.vidC {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width:  1140px) {
+		.vidB {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width:  575px) {
+		.vidA {
+			width: 100%;
+		}
+	}
+
+	@media only screen and (max-width: 895px) {
+		.anth-merchC {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 570px) {
+		.anth-merchB {
+			display: none;
+		}
+	}
+
+	.underlay-twitch {
+		background-color: rgba(213, 36, 36, 0.8);
+		width: 100%;
+		height: 510px;
+		top:  61%;
+	}
+
+	.chat_embed {
+		top: -1%; -ms-transform: translateY(1%); transform: translateY(1%);
+	}
+
+	.twitch_player2 {
+		top: -1%; -ms-transform: translateY(1%); transform: translateY(1%);
+	}
+
+	.mobile-about {
+		display: none;
+	}
+
+	.favicon-icon {
+		width: 15%; margin: 0 auto; position: absolute; z-index: 90; margin-top: 15%; left: 42.9%;
+	}
+
+	.about-overlay {
+		width: 50%; height: 100%; position: absolute; margin-top: 0%; background-color: rgba(43, 43, 43, 0.7); right: 0%;
+	}
+
+	@media only screen and (max-width: 1850px) {
+		.favicon-icon {
+			display: none;
+		}
+
+		.favicon-holder-home {
+			display: none;
+		}
+
+		.about-overlay {
+			width: 100%;
+		}
+
+		.overlay {
+			top: 100%;
+		}
+
+		.arrow-online {
+	    	position: absolute; 
+	    	width: 50px;
+    		margin: 0 auto;
+    		margin-top: -50%;
+    		z-index: 91;
+    	}
+	}
+
+	.overlay {
+		position: absolute; margin-top: 45%; background-color: #2B2B2B; width: 100%;
+	}
+</style>
+<script id="rendered-js">
+	AOS.init({
+  		duration: 1200,
+	})
+</script>
+<script>
+	var myvid = $('#myVid')[0];
+	$(window).scroll(function(){
+  		var scroll = $(this).scrollTop();
+  		scroll > 300 ? vid.pause() : vid.play()
+	})
+</script>
+<div class="load-wrapper">
+    <div class="load-elements">
+        <div class="load"></div>
+        <p class="paragraph3">Give us a moment..</p>
+    </div>
+</div>
+	<br>
+	<div id="Nav" style="background-color:#2B2B2B; height: 4%; width: 100%; top: 0%; position: absolute; z-index: 99;"><nav class="denynav">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+            	<b>
+                	<li><a href="index.html" class="hamburger-text">Home</a></li>
+                	<li><a href="about.html" class="hamburger-text">About</a></li>
+                	<li><a href="sub-perks.html" class="hamburger-text">Perks</a></li>
+                	<li><a href="https://twitter.com/anthonydaytv" target="_blank" class="hamburger-text">Twitter</a></li>
+                	<li><a href="https://youtube.com/onebigdisaster" target="_blank" class="hamburger-text">YouTube</a></li>
+                	<li><a href="https://twitch.tv/anthonydaytv" target="_blank" class="hamburger-text">Twitch</a></li>
+            	</b>
+            </ul>
+        </div>
+    </nav></div>
+
+	<div class="favicon-holder-home">
+		<img src="img/favicon.png" class="favicon-icon">
+	</div>
+	<img src="img/mobile_bg.png" style="position: absolute; top: 0%; width: 100%;"></img>
+	<video id="vid" class="mobileDisable" autoplay muted loop style="position: absolute; top: 0%; width: 100%;">
+		<source src="vid/online-hp.mp4" type="video/mp4">
+		<div class="load"></div>
+		Your Browser does not support/allow HTML5 video. Please upgrade or allow permissions.
+		<!---- AnthonyDay Montage? No...? --->
+	</video>
+	<div class="about-overlay">
+		<center><h1 class="cbtec_online-head" data-aos="fade">About <a href="#" style="color: #D52424; text-decoration: none;">Anthony Day</a></h1></center>
+		<center><p class="cbtec_online-paragraph">Hello there, I am Anthony Day and I have been a <br>full time streamer for the past eight years. I previously <br> streamed on Mixer.com before the closure and achieved over <br> 100K followers over there. I love putting smiles on people's<br> faces each day and I'm extremely grateful that <br> this is my job! This website was created to collect <br> all my social medias and put them all in one place. <br><br> Here you can find my <b><a href="https://discord.gg/anthonydaytv" style="color: #D52424; text-decoration: none;">Discord Server,</a> <a href="https://youtube.com/onebigdisaster" style="color: #D52424; text-decoration: none;">YouTube,</a> <a href="https://twitter.com/anthonydaytv" style="color: #D52424; text-decoration: none;">Twitter,</a><br> <a href="https://twitch.tv/anthonydaytv"style="color: #D52424; text-decoration: none;">Twitch</a></b> and <a href="https://tiktok.com/anthonydaymain" style="color: #D52424; text-decoration: none;"><b>TikTok</b></a>. </p>
+		<a href="https://discord.gg/anthonydaytv">
+			<img class="anth-merchAb" src="img/Anth_invite.png">
+		</a>	
+	</div>
+
+	<div class="overlay">
+		<center><div id="arrow-online-div" tabindex="0"><a href="#down"><img id="down" src="img/down_arrow.png" class="arrow-online"></div></center></a>
+    	<center><h1 class="cbtec_online-head" data-aos="fade">AnthonyDayTV.com</h1> </center>
+    	<center><h2 class="cbtec_online-subhead" data-aos="fade"><i>Official website of <a href="https://twitch.tv/anthonydaytv" style="text-decoration: none; color: #D52424;">AnthonyDayTV</a></i></h2></center>
+    	<center data-aos="fade">
+    		<div class="underlay-twitch">
+    			<iframe src="https://player.twitch.tv/?channel=anthonydaytv&parent=https://anthonydaytv.com" frameborder="0" allowfullscreen="true" scrolling="no" height="500" width="720" class="twitch_player2"></iframe><iframe id="chat_embed" frameborder="0" class="chat_embed" src="https://www.twitch.tv/embed/anthonydaytv/chat?parent=https://anthonydaytv.com" height="500" width="350" style="flex: 1;"></iframe>
+    		</div>
+    	</center>
+    	<div class="load2"></div>
+    	<p class="cbtec_online-devicesmall">Your device's width is unsupported.</p>
+    	<div class="youtube-section" data-aos="fade">
+    		<center><h1 class="cbtec_online-head" data-aos="fade">My <a style="color: #D52424; text-decoration: none;" target="_blank" href="https://youtube.com/onebigdisaster">YouTube</a></h1></center>
+    		<center><h2 class="cbtec_online-subhead" data-aos="fade"><i>Most Recent & Suggested<a href="https://youtube.com/onebigdisaster/videos" target="_blank" style="text-decoration: none; color: #D52424;"> Uploads</a></i></h2></center>
+    		<center>
+    			<div class="underlay-youtube">
+    				<iframe width="560" style="top: -1.5%; -ms-transform: translateY(1.5%); transform: translateY(1.5%);" style=""data-aos="fade" height="315" src="https://www.youtube.com/embed/videoseries?controls=1&amp;list=UUCeMydcSMZdJOKpsxCLfsTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    				<iframe width="560" class="vidB" data-aos="fade" height="315" src="https://www.youtube.com/embed/videoseries?controls=1&amp;list=PLnhKV-VgmzQRsi-mUGKsnzRtiqKu5Ft2V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    				<iframe width="560" class="vidC" height="315" src="https://www.youtube.com/embed/videoseries?controls=1&amp;list=PLnhKV-VgmzQRpcpxfaWV2t_u0DB24LROm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    			</div>
+    		</center>
+    	</div>
+    	<div class="tiktok-section" data-aos="fade">
+    		<center><h1 class="cbtec_online-head" data-aos="fade">My <a style="color: #D52424; text-decoration: none;" target="_blank" href="https://youtube.com/onebigdisaster">Merch</a></h1></center>
+    		<center><h2 class="cbtec_online-subhead" data-aos="fade"><i>Premium Quality<a href="https://youtube.com/onebigdisaster/videos" target="_blank" style="text-decoration: none; color: #D52424;"> Material</a></i></h2></center>
+    		<center>
+    			<div class="underlay-youtube">
+    				<a href="https://store.streamelements.com/anthonydaytv/product/5ef729b7bd18f9001a905926">
+    					<img width="325px" class="anth-merchA" src="img/AnthonyDay_Mug.png"></img>
+    				</a>
+    				<a href="https://store.streamelements.com/anthonydaytv/product/5ef4a38ebd18f9001a89e90b">	
+    					<img width="325px" class="anth-merchB" src="img/AnthonyDay_Hoodie.png"></img>
+    				</a>
+    				<a href="https://store.streamelements.com/anthonydaytv/product/5f2481eb4f1d65001a04087f">
+    					<img width="300px" class="anth-merchC" src="img/AnthonyDay_Mousepad.png"></img>
+    				</a>
+    			</div>
+    		</center>
+    	</div>
+    	<div data-aos="fade">
+    		<p class="cbtec_online-paragraph">
+        		
+    		</p>
+		</div>
+	<div>
+		<div>
+			<div>
+				<div>
+					<div>
+						<div>
+							<div>
+								<div>
+									<div>
+										<!--- https://youtu.be/dQw4w9WgXcQ -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>							
+    <br />
+    <br /><br />
+    <div id="issues-footer" data-aos="fade">
+    	<ins><center><h2 class="subhead2" ></h2>
+    	</center></ins>
+    	<center>
+        	<p class="paragraph">
+            	
+        	</p>
+    	</center>
+	</div>
+    <br><br /><br /><br />
+    <br />
+
+    <center>
+        <p>
+            © Anthony Day & <a href="https://countdowns.xyz" style="text-decoration: none; color: #D52424;">cbtec</a> <script>document.write(new Date().getFullYear())</script>
+        </p>
+    </center>
+    <center>
+        <p>
+            Copyright <script>document.write(new Date().getFullYear())</script> Anthony Day & <a href="https://countdowns.xyz" style="text-decoration: none; color: #D52424;">cbtec</a>. Reproduction is not permitted.</a>
+            <a target="_blank" href="https://icons8.com/icon/2760/expand-arrow">Expand Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
+    </div>
+    </center>
+</body>
+</html>

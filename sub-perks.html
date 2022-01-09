@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+    <title>About | anthonydaytv.com</title>
+    <link rel="shortcut icon icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+	<script src="javascript.js"></script>
+	<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+	<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+	<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+</head>
+<body bgcolor="#2B2B2B" text="white" position="absolute" data-aos-duration="1200" data-aos-easing="ease" data-aos-delay="0" style="transition-timing-function: ease; transition-duration: 1.2s;">
+<style>
+    html {
+  		scroll-behavior: smooth;
+ 	}
+    .cbtec_online-head {
+    	line-height: 1em;
+		font-size: 6em;
+		font-family: 'Barlow Condensed', sans-serif;
+		text-align: center;
+		width: 95%;
+		word-wrap:  break-word;
+    }
+
+    .cbtec_online-subhead {
+    	font-size: 3em;
+		line-height: 45px;
+		font-family: 'Barlow Condensed', sans-serif;
+		text-align: center;
+    }
+
+    #down {
+    }
+
+    .arrow-online {
+    	position: absolute; 
+    	width: 50px;
+    	margin: 0 auto;
+    	margin-top: 0%;
+    	z-index: 91;
+    }
+
+    .arrow-online:focus {
+    	-webkit-animation: arrow-flip 1s ease-in-out forwards;
+    			animation: arrow-flip 1s ease-in-out forwards;
+    }
+
+    .arrow-online:active {
+    	-webkit-animation: none;
+    			animation: none;
+    }
+
+    @keyframes arrow-flip {
+    	100% {
+    		-webkit-transform: rotate(180deg);
+    	}
+    }
+
+    [data-aos="fade"] {
+    	opacity: 0;
+    	transition-property: opacity;
+    	transition-duration: 0.5s;
+    }
+
+    [data-aos="fade"].aos-animate {
+    	opacity: 1;
+    }
+
+    .favicon-holder-home {
+    	margin: auto;
+    	width: 23%;
+    }
+
+
+	a:visited{ 
+		color: #D52424; 
+		text-decoration: none;
+	}
+
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            border: 5px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: rgba(255, 66, 66, 0.7);
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background-color: rgba(255, 139, 139, 0.6);
+            }
+
+    .cbtec_online-devicesmall {
+			display: none;
+			font-size: 150%;
+			line-height: 150%;
+			font-family: 'Barlow Condensed', sans-serif;
+			text-align: center;
+		}
+    
+    .cbtec_online-paragraph {
+    	font-size: 2.2em;
+		line-height: 1em;
+		font-family: 'Barlow Condensed', sans-serif;
+		text-align: center;
+		width: 95%;
+    }
+
+    .youtube-section {
+    	margin: 0 auto;
+    	display: block;
+    	z-index: 94;
+    }
+	
+    @media only screen and (max-width: 767px) {
+	body .pull-right{float:none!important}
+    }
+
+    body {
+            margin: 0;
+            width: 100%;
+        }
+
+    @media only screen and (max-device-width : 700px) {
+		.mobileDisable {
+			display: none;
+		}
+	} 
+
+	@media only screen and (max-device-width : 250px) {
+		.cbtec_online-head {
+			display: none;
+		}
+		.cbtec_online-subhead {
+			display: none;
+		}
+		.cbtec_online-paragraph {
+			display: none;
+		}
+		.cbtec_online-devicesmall {
+			display: block;
+		}
+		.arrow-online {
+			display: none;
+		}
+		.twitch_player2 {
+			display: none;
+		}
+	}
+
+	.cbtec_online-menu {
+		font-size: 2.2em;
+		line-height: 1em;
+		position: absolute;
+		top: -90%;
+		font-family: 'Barlow Condensed', sans-serif;	
+		width: 95%;
+	}
+
+	@media only screen and (max-width: 1084px) {
+		.chat_embed {
+			display: none;
+		}
+		.twitch_player2 {
+			width: 100%;
+		}
+	}
+
+	.underlay-youtube {
+		background-color: rgba(213, 36, 36, 0.8);
+		width: 100%;
+		height: 325px;
+		top:  61%;
+	}
+
+	.vidC {
+		top: -1.5%;  -ms-transform: translateY(1.5%); transform: translateY(1.5%);
+	}
+
+	.vidB {
+		top: -1.5%;  -ms-transform: translateY(1.5%); transform: translateY(1.5%);
+	}
+
+	@media only screen and (max-width:  1700px) {
+		.vidC {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width:  1140px) {
+		.vidB {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width:  575px) {
+		.vidA {
+			width: 100%;
+		}
+	}
+
+	@media only screen and (max-width: 895px) {
+		.anth-merchC {
+			display: none;
+		}
+	}
+
+	@media only screen and (max-width: 570px) {
+		.anth-merchB {
+			display: none;
+		}
+	}
+
+	.underlay-twitch {
+		background-color: rgba(213, 36, 36, 0.8);
+		width: 100%;
+		height: 510px;
+		top:  61%;
+	}
+
+	.underlay-marquee {
+		background-color: rgba(213, 36, 36, 0.8);
+		width: 100%;
+		height: 122px;
+		top:  61%;
+	}
+
+	.chat_embed {
+		top: -1%; -ms-transform: translateY(1%); transform: translateY(1%);
+	}
+
+	.twitch_player2 {
+		top: -1%; -ms-transform: translateY(1%); transform: translateY(1%);
+	}
+
+	.mobile-about {
+		display: none;
+	}
+
+	.favicon-icon {
+		width: 15%; margin: 0 auto; position: absolute; z-index: 90; margin-top: 15%; left: 42.9%;
+	}
+
+	.about-overlay {
+		width: 50%; height: 100%; position: absolute; margin-top: 0%; background-color: rgba(43, 43, 43, 0.7); right: 0%;
+	}
+
+	.about-overlay2 {
+		width: 100%; height: 120vh; position: absolute; margin-top: 0%; background-color: rgba(43, 43, 43, 0.7); right: 0%;
+	}
+
+
+	@media only screen and (max-width: 1850px) {
+		.favicon-icon {
+			display: none;
+		}
+
+		.favicon-holder-home {
+			display: none;
+		}
+
+		.about-overlay {
+			width: 100%;
+		}
+
+		.overlay {
+			top: 100%;
+		}
+
+		.arrow-online {
+	    	position: absolute; 
+	    	width: 50px;
+    		margin: 0 auto;
+    		margin-top: -50%;
+    		z-index: 91;
+    	}
+	}
+
+	.overlay {
+		position: absolute; margin-top: 45%; background-color: #2B2B2B; width: 100%;
+	}
+
+	.marquee {
+    position: relative;
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-8% + var(--offset));
+    --move-final: calc(-41.3% + var(--offset));
+}
+
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 10s linear infinite;
+    animation-play-state: running;
+    top: 4%; -ms-transform: translateY(5%); transform: translateY(5%);
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+
+.marquee:hover .marquee__inner {
+    animation-play-state: paused;
+}
+</style>
+<script id="rendered-js">
+	AOS.init({
+  		duration: 1200,
+	})
+</script>
+<script>
+	var myvid = $('#myVid')[0];
+	$(window).scroll(function(){
+  		var scroll = $(this).scrollTop();
+  		scroll > 300 ? vid.pause() : vid.play()
+	})
+</script>
+<div class="load-wrapper">
+    <div class="load-elements">
+        <div class="load"></div>
+        <p class="paragraph3">Give us a moment..</p>
+    </div>
+</div>
+	<br>
+	<div id="Nav" style="background-color:#2B2B2B; height: 4%; width: 100%; top: 0%; position: absolute; z-index: 99;"><nav class="denynav">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+            	<b>
+                	<li><a href="index.html" class="hamburger-text">Home</a></li>
+                	<li><a href="about.html" class="hamburger-text">About</a></li>
+                	<li><a href="sub-perks.html" class="hamburger-text">Perks</a></li>
+                	<li><a href="https://twitter.com/anthonydaytv" target="_blank" class="hamburger-text">Twitter</a></li>
+                	<li><a href="https://youtube.com/onebigdisaster" target="_blank" class="hamburger-text">YouTube</a></li>
+                	<li><a href="https://twitch.tv/anthonydaytv" target="_blank" class="hamburger-text">Twitch</a></li>
+            	</b>
+            </ul>
+        </div>
+    </nav></div>
+	<img src="img/mobile_bg.png" style="position: absolute; top: 0%; width: 100%;"></img>
+	<video id="vid" class="mobileDisable" autoplay muted loop style="position: absolute; top: 0%; width: 100%;">
+		<source src="vid/online-hp.mp4" type="video/mp4">
+		<div class="load"></div>
+		Your Browser does not support/allow HTML5 video. Please upgrade or allow permissions.
+		<!---- AnthonyDay Montage? No...? --->
+	</video>
+	<div class="about-overlay2">
+		<center><h1 class="cbtec_online-head" data-aos="fade">Sub <a href="#" style="color: #D52424; text-decoration: none;">Perks</a></h1></center>
+		<div class="marquee">
+			<div class="underlay-marquee">
+				<div class="marquee__inner" aria-hidden="true">
+					<img src="img/emotes/anthon4Weird.png">
+					<img src="img/emotes/anthon4Pogger.png">
+					<img src="img/emotes/anthon4Creep.png">
+					<img src="img/emotes/anthon4Evil.png">
+					<img src="img/emotes/anthon4Eyes.png">
+					<img src="img/emotes/anthon4Glasses.png">
+					<img src="img/emotes/anthon4Happy.png">
+					<img src="img/emotes/anthon4Hat.png">
+					<img src="img/emotes/anthon4Scary.png">
+					<img src="img/emotes/anthon4Shush.png">
+					<img src="img/emotes/anthon4No.gif">
+					<img src="img/emotes/anthon4Wave.gif">
+					<img src="img/emotes/anthon4Rage.gif">
+					<img src="img/emotes/anthon4Dance.gif">
+					<img src="img/emotes/anthon4Weird.png">
+					<img src="img/emotes/anthon4Pogger.png">
+					<img src="img/emotes/anthon4Creep.png">
+					<img src="img/emotes/anthon4Evil.png">
+					<img src="img/emotes/anthon4Eyes.png">
+					<img src="img/emotes/anthon4Glasses.png">
+					<img src="img/emotes/anthon4Happy.png">
+					<img src="img/emotes/anthon4Hat.png">
+					<img src="img/emotes/anthon4Scary.png">
+					<img src="img/emotes/anthon4Shush.png">
+					<img src="img/emotes/anthon4No.gif">
+					<img src="img/emotes/anthon4Wave.gif">
+					<img src="img/emotes/anthon4Rage.gif">
+					<img src="img/emotes/anthon4Dance.gif">
+					<img src="img/emotes/anthon4Weird.png">
+					<img src="img/emotes/anthon4Pogger.png">
+					<img src="img/emotes/anthon4Creep.png">
+					<img src="img/emotes/anthon4Evil.png">
+					<img src="img/emotes/anthon4Eyes.png">
+					<img src="img/emotes/anthon4Glasses.png">
+					<img src="img/emotes/anthon4Happy.png">
+					<img src="img/emotes/anthon4Hat.png">
+					<img src="img/emotes/anthon4Scary.png">
+					<img src="img/emotes/anthon4Shush.png">
+					<img src="img/emotes/anthon4No.gif">
+					<img src="img/emotes/anthon4Wave.gif">
+					<img src="img/emotes/anthon4Rage.gif">
+					<img src="img/emotes/anthon4Dance.gif">
+				</div>
+			</div>	
+		</div>
+		<div style="background-color: rgba(66, 66, 66, 0.5); width: 65%; filter: drop-shadow(0 0px 0.2rem black); margin: 0 auto;">
+			<center><h1 class="cbtec_online-head">
+			<a href="https://twitch.tv/anthonydaytv/subscribe" target="_blank" style="color: #D52424; text-decoration: none;">Tier 1</a> - £3.99 Monthly
+			</h1>
+			<p class="cbtec_online-paragraph">
+			Tier 1 is the cheapest subscription plan at £3.99 monthly. <br>
+			A Tier 1 subscription will award you with 5 animated emotes and 9 regular emotes <br>
+			in Twitch chat. Any subscription will award you with the ability to join games. <br>
+			In Battle Royale and shooters, such as Call Of Duty and Fortnite, you are allocated <br>
+			2 games unless there is a redo or a win (only to be allocated once). Tier 1 allows <br>you into the higher odds, tier 1 giveaway that occurs at the end of the calendar month. <br> At subscription date, you will be awarded 4 StreamLoots crates as a
+			<br> Tier 1 base. <br> All subscriptions allow advertisement free viewing.
+			</p>
+			<center><h1 class="cbtec_online-head">
+			<a href="https://twitch.tv/anthonydaytv" target="_blank" style="color: #D52424; text-decoration: none;">Tier 2</a> - £7.99 Monthly
+			</h1>
+			<p class="cbtec_online-paragraph">
+			Tier 2 is a slightly more premium subscription plan at £7.99 monthly. <br>
+			A Tier 2 subscription will award you with 5 animated emotes and 10 regular emotes <br>
+			in Twitch chat. Any subscription will award you with the ability to join games. <br>
+			In Battle Royale and shooters, such as Call Of Duty and Fortnite, you are allocated <br>
+			4 games unless there is a redo or a win (only to be allocated once). Tier 2 allows <br>you into the lower odds, Tier 2 and 3 giveaway that occurs at the end of the calendar month.<br> This gives you a better chance on winning a seperate but equally
+			valued giveaway. <br> At subscription date, you will be awarded 8 StreamLoots crates as a <br> Tier 2 bonus. <br> All subscriptions allow advertisement free viewing.
+			</p>
+			<center><h1 class="cbtec_online-head">
+			<a href="https://twitch.tv/anthonydaytv" target="_blank" style="color: #D52424; text-decoration: none;">Tier 3</a> - £19.99 Monthly
+			</h1>
+			<p class="cbtec_online-paragraph">
+			Tier 3 is the premium and most expensive subscription plan at £19.99 monthly. <br>
+			A Tier 3 subscription will award you with 5 animated emotes and 11 regular emotes <br>
+			in Twitch chat. Any subscription will award you with the ability to join games. <br>
+			In Battle Royale and shooters, such as Call Of Duty and Fortnite, you are allocated <br>
+			Unlimited games unless there is a redo or a win (only to be allocated once). Tier 3 allows <br>you into the lower odds, Tier 2 and 3 giveaway that occurs at the end of the calendar month.<br> This gives you a better chance on winning a seperate but equally
+			valued giveaway. <br> At subscription date, you will be awarded 12 StreamLoots crates as a <br> Tier 3 bonus. <br> All subscriptions allow advertisement free viewing.
+			</p>
+		<br>
+		<br>
+	</div>
+	<div>
+		<div>
+			<div>
+				<div>
+					<div>
+						<div>
+							<div>
+								<div>
+									<div>
+										<!--- https://youtu.be/dQw4w9WgXcQ -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>							
+    <br />
+    <br /><br />
+    <div id="issues-footer" data-aos="fade">
+    	<ins><center><h2 class="subhead2" ></h2>
+    	</center></ins>
+    	<center>
+        	<p class="paragraph">
+            	
+        	</p>
+    	</center>
+	</div>
+    <br><br /><br /><br />
+    <br />
+
+    <center>
+        <p>
+            © Anthony Day & <a href="https://countdowns.xyz" style="text-decoration: none; color: #D52424;">cbtec</a> <script>document.write(new Date().getFullYear())</script>
+        </p>
+    </center>
+    <center>
+        <p>
+            Copyright <script>document.write(new Date().getFullYear())</script> Anthony Day & <a href="https://countdowns.xyz" style="text-decoration: none; color: #D52424;">cbtec</a>. Reproduction is not permitted.</a>
+            <a target="_blank" href="https://icons8.com/icon/2760/expand-arrow">Expand Arrow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
+    </div>
+    </center>
+</body>
+</html>
